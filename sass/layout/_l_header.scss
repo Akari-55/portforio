@@ -1,0 +1,88 @@
+@use "../global/setting" as s;
+
+.l_header {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  &_inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+    @include s.mq(lg) {
+      max-width: 95%;
+    }
+    @include s.mq(md) {
+      max-width: 100%;
+      margin: 0;
+      margin-left:24px;
+      margin-right:24px;
+    }
+  }
+  &_logo-wrapper {
+    width: 207px;
+    height: 65px;
+    margin: 17px 0px 17px 0px;
+    @include s.mq(lg) {
+      width: 153px;
+      height: 58px;
+    }
+    & a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &_logo {
+    width: 100%;
+    height: 100%;
+  }
+  &-nav {
+    text-align: center;
+    margin: auto 0;
+    @include s.mq(lg) {
+      height: 53px;
+    }
+    @include s.mq(md) {
+      opacity: 0;
+      position: fixed;
+      box-shadow: none;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+      z-index: 10;
+    }
+  }
+  &-nav_list {
+    height: 100%;
+    @include s.flex();
+    gap: 64px;
+    margin: 0 40px;
+    @include s.mq(xl) {
+      gap: 24px;
+      margin: 0 20px;
+    }
+    @include s.mq(lg) {
+      gap: 16px;
+    }
+    @include s.mq(md) {
+      flex-direction: column;
+      color: s.$whiteColor;
+
+      gap: 100px;
+    }
+  }
+  &-nav_link {
+    color:s.$mainColor;
+    font-size: 22px;
+    @include s.mq(xl) {
+      font-size: 18px;
+    }
+    @include s.mq(lg) {
+      font-size: 16px;
+    }
+    @include s.mq(md) {
+      font-size: 32px;
+    }
+  }
+}

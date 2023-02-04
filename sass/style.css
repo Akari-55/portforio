@@ -212,7 +212,7 @@ legend {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 64px;
+  gap: 31px;
   margin: 0 40px;
 }
 @media screen and (max-width: 1200px) {
@@ -283,10 +283,9 @@ legend {
   background: url(../img/concept.png);
   width: 100%;
   padding-top: 88px;
-  padding-bottom: 104px;
 }
 .top_concept-inner {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
 }
 .top_concept-title {
@@ -305,31 +304,6 @@ legend {
 .top_concept-detail-title {
   font-size: 32px;
   font-weight: 500;
-}
-.top_concept-detail-title span {
-  background: linear-gradient(transparent 70%, #F6DFDE 50%);
-}
-.top_concept-detail__txt {
-  margin-top: 32px;
-  font-size: 21px;
-}
-.top_concept-detail__txt p {
-  margin-top: 16px;
-}
-.top_concept-detail__txt :nth-of-type(1) {
-  margin-top: 0;
-}
-.top_concept-detail-service {
-  margin-top: 40px;
-}
-.top_concept-detail-service-title {
-  font-size: 22px;
-  color: #EBA5AC;
-  font-weight: 400;
-}
-.top_concept-detail-service__txt {
-  font-size: 21px;
-  margin-top: 16px;
 }
 .top_concept-img-wrapper {
   position: relative;
@@ -354,13 +328,6 @@ legend {
   left: -10%;
 }
 
-.top_flow-area {
-  margin-top: 80px;
-}
-.top_flow-area-item {
-  background: url(../img/flowbackground01.png);
-}
-
 .m_title {
   text-align: center;
   font-family: "Cormorant", serif;
@@ -376,4 +343,5 @@ legend {
 
 body {
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
